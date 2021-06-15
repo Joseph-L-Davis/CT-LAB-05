@@ -1,6 +1,5 @@
 const request = require('supertest');
 const app = require('../lib/app');
-const parseRequest = require('../lib/utils/parseRequest');
 
 describe('app routes', () => {
   it('GET hi, plain text from /', async() => {
