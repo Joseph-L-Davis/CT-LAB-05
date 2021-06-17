@@ -7,6 +7,17 @@ describe('app routes', () => {
       .get('/index.html');
 
     console.log(res.text);
-    expect(res.text).toEqual('AM I DOING THIS RIGHT?');
+    expect(res.text).toEqual(`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ NOT SURE THIS IS WHAT I SHOULD BE DOING
+</body>
+</html>`);
   });  
 });
